@@ -45,7 +45,7 @@ chomp $UBUNTU_VERSION;
 if ( $< == 0 ) {
 
 	#Backup any existing configuration
-	print "Backing up existing IPTables..."
+	print "Backing up existing IPTables...";
 	system("iptables-save -c > /etc/iptables-torbackup");
 	print "Saved as /etc/iptables-backup\n";	
 	system("cp /etc/resolv.conf /etc/resolv.conf.torbackup");
